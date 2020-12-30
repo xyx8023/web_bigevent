@@ -14,7 +14,7 @@ $(function() {
     var form = layui.form;
     //通过form.verify() 函数自定义校验规则
     form.verify({
-        pwd: [/^[\s]{6,12}$/, '密码必须6到12位，且不能出现空格'],
+        pwd: [/^[\S]{6,12}$/, '密码必须6到12位，且不能出现空格'],
         repwd: function(value) {
             var pwd = $('#pwdd').val();
             if (pwd !== value) {
@@ -22,9 +22,10 @@ $(function() {
             }
         }
     });
-    // var repwd = $('#repwd').val();
-    // var pwd = $('#pwd').val();
-    // if (repwd != pwd) {
-    //     return '两次密码输入不一致'
-    // }
+
+
+    // 表单提交
+    $('#form_login').on('submit', function(e) {
+
+    })
 })
