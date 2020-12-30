@@ -25,7 +25,35 @@ $(function() {
 
 
     // 表单提交
-    $('#form_login').on('submit', function(e) {
+    // $('#form_login').on('submit', function(e) {
+    //     e.preventDefault();
+    //     $.ajax({
+    //         url: '/api/login',
+    //         method: 'POST',
+    //         // 一次获取表单内容
+    //         data: $(this).serialize(),
+    //         success: function(res) {
+    //             // layui的弹出层方法 layer.msg
+    //             if (res.status != 0) return layer.msg('登录失败！')
+    //             layer.msg('登录成功！')
+    //         }
 
-    })
+    //     })
+    // })
+
+    // // (注册)表单提交
+    // $('#form_reg').on('submit', function(e) {
+    //     e.preventDefault();
+    //     $.ajax({
+    //         url: '/api/reguser',
+    //         method: 'POST',
+    //         // 一次获取表单内容
+    //         data: $(this).serialize(),
+    //         success: function(res) {
+    //             // layui的弹出层方法 layer.msg
+    //             if (res.status != 0) return layer.msg('登录失败！')
+    //             layer.msg('登录成功！')
+    //         }
+    //     })
+    // })
 })
