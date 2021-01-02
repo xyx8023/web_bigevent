@@ -34,6 +34,8 @@ $(function() {
                 // layui的弹出层方法 layer.msg
                 if (res.status != 0) return layer.msg('登录失败！')
                 layer.msg('登录成功！')
+                    // 将登录成功得到的 token 字符串，保存到 localStorage 中
+                localStorage.setItem('token', res.token)
                 location.href = './index.html'
             }
 
